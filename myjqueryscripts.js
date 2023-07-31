@@ -17,7 +17,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function () {
     
-    $('.sec2').mouseenter(function () {
+    $('.sec2').mouseover(function () {
         $('.sec2 .card p').css('display', 'none');
         $(this).addClass('bg');
         $(this).removeClass('sec2');
@@ -30,14 +30,26 @@ $(document).ready(function () {
     
     $('.sec2 .card .btn').click(function () {
         $("p").css('padding-top', '20px');
-        $("p").toggle();
+        // $("p").toggle();
+        $(this).closest('.card-body').find('p').toggle();
+        if( $(this).closest('.card-body').find('.btn').html()=='Read Less'){
+        $(this).closest('.card-body').find('.btn').text('Read More');  
+        $(this).closest('.card-body').find('.btn').removeClass('btn-danger'); 
+        $(this).closest('.card-body').find('.btn').addClass('btn-primary');  
+        }else{
+        $(this).closest('.card-body').find('.btn').text('Read Less'); 
+        $(this).closest('.card-body').find('.btn').addClass('btn-danger'); 
+        $(this).closest('.card-body').find('.btn').removeClass('btn-primary');   
+
+
+        }
+
         // $(this).addClass('bg1');
         // $(this).removeClass('sec2');
         
     })
     
     $('.sec2 .btn').click(function () {
-        $('.btn').text('Read Less');   
     })
     
     // $('.sec2 .btn').click(function () {
@@ -45,8 +57,29 @@ $(document).ready(function () {
     // })
 
     $(".sec3 a").click(function(){
-        $(this).addClass('bg');
+        // $(this).addClass('bg');
         $(".y").animate({left: '25550px'});
+      });
+
+      $(".sec3 a").click(function(){
+        $(".y").animate({left: '250px'});
+      });
+
+
+      $(".sec3 a").click(function(){
+        $(".y").animate({
+          height: 'toggle'
+        });
       });
     
 });
+// $(document).ready(function(){
+    
+//   });
+
+
+
+
+
+
+
