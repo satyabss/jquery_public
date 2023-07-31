@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
- 
+    <link rel="stylesheet" href="mybootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -34,10 +35,18 @@
                                     <h5 class="card-title">Anand</h5>
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="#" class="toggletext btn btn-primary">Read More</a>
+                                    <div class="social-icon">
+                                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://wa.me/9876543210"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+
                                 </div>
                             </div>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card <span>title and make up the bulk of the card's content.</span></p>
+                            <a href="#" class="toggletext btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +62,7 @@
                                     <a href="#" class="toggletext btn btn-primary">Show More</a>
                                 </div>
                             </div>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card <span>title and make up the bulk of the card's content.</span></p>
                         </div>
                     </div>
                 </div>
@@ -69,7 +78,7 @@
                                     <a href="#" class="toggletext btn btn-primary">Show More</a>
                                 </div>
                             </div>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card <span>title and make up the bulk of the card's content.</span></p>
                         </div>
                     </div>
                 </div>
@@ -176,9 +185,9 @@
 
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="myjquery.js" type="text/javascript"></script>
+    <script src="mybootstrap.js" type="text/javascript"></script>
     <script src="myjqueryscripts.js" type="text/javascript"></script>
 
 
