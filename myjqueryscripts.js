@@ -67,6 +67,7 @@ $(document).ready(function () {
       });
 
 
+
       $(".sec3 a").click(function(){
         $(".y").animate({
           height: 'toggle'
