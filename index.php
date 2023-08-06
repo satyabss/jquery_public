@@ -12,6 +12,29 @@
 </head>
 
 <body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="productdetail">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- <section class="sec1">
         <div class="container">
             <div class="row">
@@ -21,7 +44,14 @@
                 </div>
             </div>
         </div>
+
     </section> -->
+    <section>
+        <div class="container-fluid">
+            <div class="row" id="productlist">
+            </div>
+        </div>
+    </section>
 
     <section class="sec2">
         <div class="container">
@@ -173,6 +203,11 @@
 
 
 
+    <h1>All Carts</h1>
+    <ul id="cartList">
+        <!-- Cart items will be appended here -->
+    </ul>
+
 
 
 
@@ -189,7 +224,55 @@
     <script src="myjquery.js" type="text/javascript"></script>
     <script src="mybootstrap.js" type="text/javascript"></script>
     <script src="myjqueryscripts.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
 
+
+            // Make the AJAX GET request
+            $.ajax({
+                url: 'https://fakestoreapi.com/carts',
+                type: "GET",
+                dataType: "json",
+                success: function(data) {
+                    console.log(data);
+                    // Process the response data
+                    if (data && data.length > 0) {
+                        // Assuming the API response is an array of carts
+                        data.forEach(function(cart) {
+                            // Assuming each cart has an 'id' property
+                            const cartId = cart.id;
+                            // Assuming each cart has a 'userId' property
+                            const userId = cart.userId;
+                            const date = cart.date;
+                            const products = cart.products;
+
+                            // Append cart information to the cartList element
+                            $("#cartList").append(`<li class="card col-md-9">Cart ID: ${cartId}, User ID: ${userId}, Date : ${date}, products : ${products}</li>`);
+
+                        });
+                    } else {
+                        // No carts found
+                        $("#cartList").append("<li>No carts found.</li>");
+                    }
+                },
+                error: function(xhr, status, error) {
+                    // Handle errors here
+                    $("#cartList").append(`<li>Error: ${error}</li>`);
+                }
+            });
+            $("li").on({
+                mouseenter: function() {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function() {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function() {
+                    $(this).css("background-color", "yellow");
+                }
+            });
+        });
+    </script>
 
 </body>
 

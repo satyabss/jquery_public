@@ -82,6 +82,61 @@ $(document).ready(function () {
 
 
 
+    // alert('Hello i am alert');
+
+    // if(confirm('Are sure to delete'))
+    // {
+    //     alert('Deleted');
+    // }else{
+    //     alert('Not Deleted');
+    // }
+
+
+    function myFunction(){
+        // var inp1=document.getElementById('name').value;
+        // alert(inp1);
+    }
+
+    $(document).ready(function(){
+
+    
+//         $.ajax({
+//             url:'https://fakestoreapi.com/products',
+//             method:'GET',
+//             success:function(response){
+//                 console.log(response);
+//                 var product='';
+//                 $.each(response, function(i, item) {
+//     product+='<div class="col-md-2"><div class="card"><div class="card-body item"><img src="'+item.image+'" class="img-fluid" style="width:256px;height:256px;"><h6>'+item.title+'</h6><input type="hidden" class="itemid" value="'+item.id+'"></div></div></div>';
+// });
+// $('#productlist').html(product);
+//             }
+//         });
+
+        // $('body').on('click','.item',function(){
+        //     var itemid=$(this).find('.itemid').val();
+            
+        // $.ajax({
+        //     url:'https://fakestoreapi.com/products/'+itemid,
+        //     method:'GET',
+        //     success:function(response){
+        //         // console.log(response);
+        //         var html='';
+        //         html+='<div class="row">';
+        //         html+='<div class="col-md-12 text-center"><img src="'+response.image+'" class="img-fluid" style="width:256px;height:256px;"></div>';
+        //         html+='<div class="col-md-12"><h4>'+response.category+' <span class="float-right">'+response.rating.rate+'('+response.rating.count+')</span></h4></div>';
+        //         html+='<div class="col-md-12"><h5>'+response.title+'</h5></div>';
+        //         html+='<div class="col-md-12"><h6>₹ '+response.price+'</h6>   </div>';
+        //         html+='<div class="col-md-12"><p>'+response.description+'</p></div>';
+        //         html+='</div>';
+
+        //         $('#productdetail').html(html);
+
+        //         $('#staticBackdrop').modal('show');
+        //     }
+        // })
+        // });
 
 
 
+      });
