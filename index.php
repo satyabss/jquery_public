@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    </div>
+ 
     <!-- <section class="sec1">
         <div class="container">
             <div class="row">

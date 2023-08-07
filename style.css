@@ -26,11 +26,11 @@
 
 /* sec2 css */
 .sec2{
-    background: red;
+    background:url(ban2.jpg);
     padding: 50px 0;
 }
 .bg{
-    background:linear-gradient(181deg, blue, transparent);
+    background:url(ban1.jpg);
     padding: 50px 0;
 }
 .bg1{
